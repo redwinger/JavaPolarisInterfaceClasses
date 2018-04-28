@@ -4,12 +4,19 @@ public class Dog implements IAnimal{
 
     private String name;
     private String soundAnimalMakes;
+    private String thisIsWhatTheyEat;
 
-    public Dog(String name, String soundAnimalMakes) {
+    public Dog(String name, String soundAnimalMakes, String thisIsWhatTheyEat) {
 
         this.name = name;
         this.soundAnimalMakes = soundAnimalMakes;
+        this.thisIsWhatTheyEat = thisIsWhatTheyEat;
 
+    }
+
+    public String thisIsWhatTheyEat(){
+
+        return thisIsWhatTheyEat;
     }
 
     @Override
